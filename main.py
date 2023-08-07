@@ -104,7 +104,7 @@ gradescol = {
 
 dcols = ['Subjects','Credits']
 
-
+sgpa = []
 with c[0]:
     st.write("1-1 Marks Table")
     S1 = st.data_editor(
@@ -114,6 +114,9 @@ with c[0]:
         column_config = gradescol,
         disabled=dcols,
     )
+    s1r = calcPointAvg(S1)
+    if calcPointAvg(S1) > 0:
+        sgpa.append(s1r)
     st.write(f"Sem 1 SGPA: :green[{calcPointAvg(S1)}]")
 
     st.write("1-2 Marks Table")
@@ -124,6 +127,9 @@ with c[0]:
         column_config = gradescol,
         disabled=dcols,
     )
+    s2r = calcPointAvg(S2)
+    if s2r > 0:
+        sgpa.append(s2r)
     st.write(f"Sem 2 SGPA: :green[{calcPointAvg(S2)}]")
 
 with c[1]:
@@ -135,6 +141,10 @@ with c[1]:
         column_config = gradescol,
         disabled = dcols,
     )
+    s3r = calcPointAvg(S3)
+    if s3r > 0:
+        sgpa.append(s3r)
+
     st.write(f"Sem 3 SGPA: :green[{calcPointAvg(S3)}]")
 
     st.write("2-2 Marks Table")
@@ -145,9 +155,14 @@ with c[1]:
         column_config = gradescol,
         disabled=dcols,
     )
+    s4r = calcPointAvg(S4)
+    if s4r > 0:
+        sgpa.append(s4r)
     st.write(f"Sem 4 SGPA: :green[{calcPointAvg(S4)}]")
 
-result_df = pd.concat([S1, S2, S3, S4], axis=0)
 
-st.toast(f"CGPA : :green[{calcPointAvg(result_df)}]")
-st.info(f"CGPA : :green[{calcPointAvg(result_df)}]")
+if len(sgpa) == 0:
+    sgpa.append(0)
+
+st.toast(f"CGPA : :green[{round(sum(sgpa)/len(sgpa),2)}]")
+st.info(f"CGPA : :green[{round(sum(sgpa)/len(sgpa),2)}]")
