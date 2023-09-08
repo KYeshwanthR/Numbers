@@ -13,7 +13,7 @@ def title():
     st.markdown(f"<h1 style='text-align: center; color: red;'>Do not Select Emtpy option as Grade</h1>", unsafe_allow_html=True)
 
 
-title()
+#title()
 
 points = {"A+": 10,"A": 9,"B": 8,"C": 7,"D": 6,"E": 5,"F": 0}
 
