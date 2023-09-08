@@ -99,6 +99,7 @@ gradescol = {
         "Grade" : st.column_config.SelectboxColumn(
             help = "Click on your Grade from DropDown",
             options = list(points.keys()),
+            required=True,
         ),
     }
 
