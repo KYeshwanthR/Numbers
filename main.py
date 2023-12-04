@@ -175,7 +175,6 @@ with c[1]:
         sgpa.append(s4r)
     st.write(f"Sem 4 SGPA: :green[{calcPointAvg(S4)}]")
 
-<<<<<<< HEAD
 S5 = st.data_editor(
         makedf("Sem5"),
         use_container_width = True,
@@ -190,11 +189,3 @@ result_df = pd.concat([S1, S2, S3, S4, S5], axis=0)
 st.write(f"Total Credits: {sum(tc)}")
 st.toast(f"CGPA : :green[{calcPointAvg(result_df)}]")
 st.info(f"CGPA : :green[{calcPointAvg(result_df)}]")
-=======
-
-if len(sgpa) == 0:
-    sgpa.append(0)
-
-st.toast(f"CGPA : :green[{round(sum(sgpa)/len(sgpa),2)}]")
-st.info(f"CGPA : :green[{round(sum(sgpa)/len(sgpa),2)}]")
->>>>>>> 45d18c99478104ff7635d1a1eb7ddd97a27c7af7
