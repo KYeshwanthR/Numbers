@@ -66,6 +66,17 @@ Subs = {
         "Software Engineering Lab" : 1.5,
         "MEAN stack Technologies" : 2,	
     },
+
+    "Sem5" : {
+        "ATCD" : 3,
+        "CN" : 3,
+        "DWM" : 3,
+        "SPM" : 3,
+        "FIC" : 3,
+        "IPR" : 3,
+        "CN Lab" : 1.5,
+        "DWM Lab" : 1.5,
+    },
 }
 
 def makedf(sem):
@@ -82,9 +93,12 @@ def makedf(sem):
 
     return pd.DataFrame(data)
 
+tc = []
 def calcPointAvg(df: pd.DataFrame):
     GPoints = df['Grade'].tolist()
     ACredits = df['Credits'].tolist()
+
+    tc.append(sum(ACredits))
 
     sgp = sum([points[grade] * Credit for grade,Credit in zip(GPoints,ACredits)])
 
@@ -147,7 +161,17 @@ with c[1]:
     )
     st.write(f"Sem 4 SGPA: :green[{calcPointAvg(S4)}]")
 
-result_df = pd.concat([S1, S2, S3, S4], axis=0)
+S5 = st.data_editor(
+        makedf("Sem5"),
+        use_container_width = True,
+        hide_index=True,
+        column_config = gradescol,
+        disabled=dcols,
+    )
+st.write(f"Sem 5 SGPA: :green[{calcPointAvg(S5)}]")
 
+result_df = pd.concat([S1, S2, S3, S4, S5], axis=0)
+
+st.write(f"Total Credits: {sum(tc)}")
 st.toast(f"CGPA : :green[{calcPointAvg(result_df)}]")
 st.info(f"CGPA : :green[{calcPointAvg(result_df)}]")
