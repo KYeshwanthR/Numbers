@@ -73,7 +73,7 @@ Subs = {
         "DWM" : 3,
         "SPM" : 3,
         "FIC" : 3,
-        "IPR" : 3,
+        "IPR" : 0,
         "CN Lab" : 1.5,
         "DWM Lab" : 1.5,
     },
