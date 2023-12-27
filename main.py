@@ -69,13 +69,15 @@ Subs = {
 
     "Sem5" : {
         "ATCD" : 3,
-        "CN" : 3,
-        "DWM" : 3,
-        "SPM" : 3,
-        "FIC" : 3,
-        "IPR" : 0,
-        "CN Lab" : 1.5,
+        "Summer Internship" : 1.5,
+        "SSA" : 2.0,
         "DWM Lab" : 1.5,
+        "CN Lab" : 1.5,
+        "FIC" : 3,
+        "SPM" : 3,
+        "DWM" : 3,
+        "CN" : 3,
+        "IPR" : 0,
     },
 }
 
