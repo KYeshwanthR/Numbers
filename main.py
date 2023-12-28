@@ -4,7 +4,7 @@ import re, json
 
 st.set_page_config(layout='wide',page_title='Numbers')
 
-if st.button("Result Links"):
+with st.expander("Result Links"):
     st.info("Links of results [1-1](http://sasi.ac.in/11apr2022/) [1-2](http://sasi.ac.in/btech12sep2022/) [2-1](http://www.sasi.ac.in/btech21regjan2023/) [2-2](https://sasi.ac.in/btech22regsupjuly2023/) [3-1](https://sasi.ac.in/btech31regnov2023/)" )
 
 st.header("Initally Grades are set to F")
