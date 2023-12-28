@@ -1,0 +1,62 @@
+{
+  "Sem1": {
+    "Technical English": 3,
+    "Engineering Mathematics-I": 3,
+    "Basic Electrical Engineering": 3,
+    "Programming for Problem Solving": 3,
+    "Computer Aided Engineering Graphics": 3,
+    "English Communication Skills Lab": 1.5,
+    "Basic Electrical Engineering Lab": 1.5,
+    "Programming for Problem Solving Lab": 1.5,
+    "Environmental Science": 0
+  },
+  "Sem2": {
+    "Engineering Mathematics - II": 3,
+    "Engineering Physics": 3,
+    "Engineering Chemistry": 3,
+    "Python Programming": 3,
+    "Data Structures": 3,
+    "Engineering Physics Lab": 1.5,
+    "Engineering Chemistry Lab": 1.5,
+    "Data Structures Lab": 1.5,
+    "Constitution of India, Professional Ethics & Human Right": 0
+  },
+
+  "Sem3": {
+    "Probability Distributions & Statistical Methods": 3,
+    "Data Science Using Python": 2,
+    "Data Base Management Systems Lab": 1.5,
+    "Java Programming Lab": 1.5,
+    "Analog & Digital Electronics Lab": 1.5,
+    "Data Base Management Systems": 3.0,
+    "Java Programming": 3.0,
+    "Computer Organization": 3.0,
+    "Analog & Digital Electronics": 3.0,
+    "Biology for Engineers": 0
+  },
+
+  "Sem4": {
+    "Discrete Mathematics": 3,
+    "Engineering Economics and Financial Management": 3,
+    "Operating systems": 3,
+    "Design and Analysis of Algorithms": 3,
+    "Software Engineering": 3,
+    "Operating Systems Lab": 1.5,
+    "Design and Analysis of Algorithms Lab": 1.5,
+    "Software Engineering Lab": 1.5,
+    "MEAN stack Technologies": 2
+  },
+
+  "Sem5": {
+    "ATCD": 3,
+    "Summer Internship": 1.5,
+    "SSA": 2.0,
+    "DWM Lab": 1.5,
+    "CN Lab": 1.5,
+    "FIC": 3,
+    "SPM": 3,
+    "DWM": 3,
+    "CN": 3,
+    "IPR": 0
+  }
+}
