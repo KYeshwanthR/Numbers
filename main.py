@@ -46,8 +46,6 @@ def convert_to_list(input_string):
     pattern = r'a\+|[abcdef]'
     return re.findall(pattern, input_string, re.IGNORECASE)
 
-st.write(len(Subs))
-
 semresults = []
 for n in Subs:
     allowed_grades = ['A+', 'A', 'B', 'C', 'D', 'E', 'F']
@@ -61,7 +59,7 @@ for n in Subs:
         gradesinput = [n.upper() for n in convert_to_list(gradesinput)]
     else:
         st.error(f"allowed grades are {allowed_grades}")
-    res = makedf(list(Subs[n].keys()),list(Subs[n].values()),list(gradesinput) + ['F']*(len(Subs[n]) - len(gradesinput)))
+    res = makedf(list(Subs[n].keys()),list(Subs[n].values()),(list(gradesinput) + ['F']*(len(Subs[n]) - len(gradesinput)))[:len(Subs[n])])
     st.dataframe(res,use_container_width=True,hide_index=True)
     semresults.append(res)
 
