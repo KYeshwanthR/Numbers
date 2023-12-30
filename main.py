@@ -51,16 +51,17 @@ for n in Subs:
     allowed_grades = ['A+', 'A', 'B', 'C', 'D', 'E', 'F']
     default = 'F'
 
-    st.divider()
     cols = st.columns(2)
+    with st.expander(f"Sem {n[-1]}: Enter Grades in this order of Subjects"):
+        for m in list(Subs[n].keys()):
+            st.markdown(f"- {m}")
     gradesinput = st.text_input("Enter Grades",max_chars=len(Subs[n])*2,help=f"{allowed_grades}",key=n)
-    st.info("Enter Grades in order of Subjects")
     if is_valid_input(gradesinput):
         gradesinput = [n.upper() for n in convert_to_list(gradesinput)]
     else:
         st.error(f"allowed grades are {allowed_grades}")
+        gradesinput = ""
     res = makedf(list(Subs[n].keys()),list(Subs[n].values()),(list(gradesinput) + ['F']*(len(Subs[n]) - len(gradesinput)))[:len(Subs[n])])
-    st.dataframe(res,use_container_width=True,hide_index=True)
     semresults.append(res)
 
     st.success(f"Sem-{n[-1]} SGPA: :green[{calcPointAvg(res)}]" )
