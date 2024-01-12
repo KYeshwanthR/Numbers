@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # For Python projects
+    directory: "/" # Root directory of the repository
+    schedule:
+      interval: "weekly" # How often to check for updates
