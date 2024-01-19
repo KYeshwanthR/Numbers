@@ -15,8 +15,8 @@ To get started with this project, you'll need to have Python installed on your s
 
 1. **Clone the Repository**
    ```
-   git clone [https://github.com/KYeshwanthR/Numbers.git]
-   cd [Numbers]
+   git clone https://github.com/KYeshwanthR/Numbers.git
+   cd Numbers
    ```
 
 2. **Install Dependencies**
