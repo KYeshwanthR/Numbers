@@ -78,9 +78,11 @@ if not w:
     st.info(f"CGPA : :green[{calcPointAvg(result_df)}]")
 
 if w:
+    alls = st.toggle("All")
     sgpas = []
     st.header("Enter SGPA for each sem")
-    for n in range(linksinfo.count("[")):
+    for n in range(linksinfo.count("[")+(8-linksinfo.count("[")) if alls else linksinfo.count("[")):
         sgpas.append(st.number_input(f"Sem {n+1}: ",min_value=0.00,max_value=10.00,key=n))
+        st.info(f"CGPA till Sem {n+1} ➡️ {round(sum(sgpas)/len(sgpas),2)}")
 
     st.success(f"CGPA : {round(sum(sgpas)/len(sgpas),2)}")
