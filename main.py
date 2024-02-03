@@ -82,5 +82,6 @@ if w:
     st.header("Enter SGPA for each sem")
     for n in range(linksinfo.count("[")+2):
         sgpas.append(st.number_input(f"Sem {n+1}: ",min_value=0.00,max_value=10.00,key=n))
+        st.success(f"CGPA : {round(sum(sgpas)/len(sgpas),2)}")
 
     st.success(f"CGPA : {round(sum(sgpas)/len(sgpas),2)}")
