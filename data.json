@@ -58,5 +58,18 @@
     "DWM": 3,
     "CN": 3,
     "IPR": 0
+  }, 
+
+  "Sem6" : {
+    "Machine Learning": 3.0,
+    "Soft Skills and Aptitude Builder II": 2.0,
+    "Unified Modelling Language Lab": 1.5,
+    "Machine Learning Lab": 1.5,
+    "Devops Lab": 1.5,
+    "Operations Research": 3.0,
+    "Artificial Intelligence": 3.0,
+    "Unified Modelling Language": 3.0,
+    "Devops": 3.0,
+    "Essence of Indian Traditional Knowledge": 0.0
   }
 }
