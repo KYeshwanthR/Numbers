@@ -4,7 +4,7 @@ import re, json
 
 st.set_page_config(layout='wide',page_title='Numbers')
 
-linksinfo = "Links of results [1-1](http://sasi.ac.in/11apr2022/) [1-2](http://sasi.ac.in/btech12sep2022/) [2-1](http://www.sasi.ac.in/btech21regjan2023/) [2-2](https://sasi.ac.in/btech22regsupjuly2023/) [3-1](https://sasi.ac.in/btech31regnov2023/)"
+linksinfo = "Links of results [1-1](http://sasi.ac.in/11apr2022/) [1-2](http://sasi.ac.in/btech12sep2022/) [2-1](http://www.sasi.ac.in/btech21regjan2023/) [2-2](https://sasi.ac.in/btech22regsupjuly2023/) [3-1](https://sasi.ac.in/btech31regnov2023/) [3-2](https://www.sasi.ac.in/results/btech32april2024/) [4-1](https://sasi.ac.in/results/btech7semdec2024/)"
 with st.expander("Result Links"):
     st.info(linksinfo)
 
@@ -81,7 +81,7 @@ if w:
     alls = st.toggle("All")
     sgpas = []
     st.header("Enter SGPA for each sem")
-    for n in range(linksinfo.count("[")+(8-linksinfo.count("[")) if alls else linksinfo.count("[")):
+    for n in range(linksinfo.count("[")+(7-linksinfo.count("[")) if alls else linksinfo.count("[")):
         sgpas.append(st.number_input(f"Sem {n+1}: ",min_value=0.00,max_value=10.00,key=n))
         st.info(f"CGPA till Sem {n+1} ➡️ {round(sum(sgpas)/len(sgpas),2)}")
 
