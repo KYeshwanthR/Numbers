@@ -58,21 +58,8 @@
     "DWM": 3,
     "CN": 3,
     "IPR": 0
-<<<<<<< HEAD
   },
-
-  "Sem6" : {
-    "MC" : 3.0,
-    "CV" : 3.0,
-    "CNS" : 3.0,
-    "FIOT" : 3.0,
-    "NCSE" : 3.0,
-    "MS" : 3.0,
-    "ETLSpark" : 2.0,
-    "RI" : 3.0
-=======
-  }, 
-
+  
   "Sem6" : {
     "Machine Learning": 3.0,
     "Soft Skills and Aptitude Builder II": 2.0,
@@ -84,6 +71,17 @@
     "Unified Modelling Language": 3.0,
     "Devops": 3.0,
     "Essence of Indian Traditional Knowledge": 0.0
->>>>>>> e862949c82a0ccd6165a244c836bb4657d126880
-  }
+  },
+
+  "Sem7" : {
+    "MC" : 3.0,
+    "CV" : 3.0,
+    "CNS" : 3.0,
+    "FIOT" : 3.0,
+    "NCSE" : 3.0,
+    "MS" : 3.0,
+    "ETLSpark" : 2.0,
+    "RI" : 3.0
+  }, 
+
 }
